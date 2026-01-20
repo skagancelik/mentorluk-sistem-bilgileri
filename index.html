@@ -15,8 +15,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #e0e0e0;
+            background: #1a1a1a;
             padding: 20px;
             min-height: 100vh;
         }
@@ -24,17 +24,17 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            background: #2d2d2d;
+            border-radius: 0;
             overflow: hidden;
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #1f1f1f;
+            color: #e0e0e0;
             padding: 40px;
             text-align: center;
+            border-bottom: 1px solid #404040;
         }
         
         .header h1 {
@@ -73,26 +73,26 @@
         }
         
         .section h2 {
-            color: #667eea;
+            color: #88aaff;
             font-size: 2em;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 2px solid #404040;
         }
         
         .section h3 {
-            color: #764ba2;
+            color: #99bbff;
             font-size: 1.5em;
             margin: 30px 0 15px 0;
         }
         
         .diagram-container {
-            background: #f8f9fa;
-            border-radius: 8px;
+            background: #1f1f1f;
+            border-radius: 0;
             padding: 30px;
             margin: 30px 0;
             overflow-x: auto;
-            border: 2px solid #e9ecef;
+            border: 1px solid #404040;
         }
         
         .components-grid {
@@ -103,20 +103,19 @@
         }
         
         .component-card {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
+            background: #1f1f1f;
+            border-left: 3px solid #88aaff;
             padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 0;
+            transition: none;
         }
         
         .component-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+            background: #252525;
         }
         
         .component-card h4 {
-            color: #667eea;
+            color: #88aaff;
             margin-bottom: 10px;
             font-size: 1.2em;
         }
@@ -128,26 +127,27 @@
         
         .component-card li {
             padding: 5px 0;
-            color: #555;
+            color: #b0b0b0;
         }
         
         .component-card li:before {
             content: "▸ ";
-            color: #764ba2;
+            color: #88aaff;
             font-weight: bold;
         }
         
         .qa-section {
-            background: #f8f9fa;
-            border-radius: 8px;
+            background: #1f1f1f;
+            border-radius: 0;
             padding: 25px;
             margin: 20px 0;
+            border: 1px solid #404040;
         }
         
         .qa-item {
             margin-bottom: 25px;
             padding-bottom: 25px;
-            border-bottom: 1px solid #dee2e6;
+            border-bottom: 1px solid #404040;
         }
         
         .qa-item:last-child {
@@ -157,14 +157,14 @@
         }
         
         .qa-question {
-            color: #667eea;
+            color: #88aaff;
             font-weight: 600;
             font-size: 1.1em;
             margin-bottom: 10px;
         }
         
         .qa-answer {
-            color: #555;
+            color: #b0b0b0;
             line-height: 1.8;
         }
         
@@ -176,33 +176,34 @@
         }
         
         .tech-item {
-            background: white;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
+            background: #1f1f1f;
+            border: 1px solid #404040;
+            border-radius: 0;
             padding: 20px;
         }
         
         .tech-item h4 {
-            color: #764ba2;
+            color: #99bbff;
             margin-bottom: 10px;
         }
         
         .badge {
             display: inline-block;
-            background: #667eea;
-            color: white;
+            background: #404040;
+            color: #e0e0e0;
             padding: 4px 12px;
-            border-radius: 12px;
+            border-radius: 4px;
             font-size: 0.85em;
             margin: 5px 5px 5px 0;
+            border: 1px solid #606060;
         }
         
         .footer {
-            background: #f8f9fa;
+            background: #1f1f1f;
             padding: 30px;
             text-align: center;
-            color: #666;
-            border-top: 2px solid #e9ecef;
+            color: #808080;
+            border-top: 1px solid #404040;
         }
         
         @media (max-width: 768px) {
@@ -230,7 +231,7 @@
         
         <div class="content">
             <div class="section">
-                <h2>📊 Sistem Mimarisi</h2>
+                <h2>Sistem Mimarisi</h2>
                 <div class="diagram-container">
                     <div class="mermaid">
 graph TB
@@ -289,7 +290,7 @@ graph TB
             </div>
             
             <div class="section">
-                <h2>🏗️ Sistem Bileşenleri</h2>
+                <h2>Sistem Bileşenleri</h2>
                 
                 <h3>Frontend Uygulamaları</h3>
                 <div class="components-grid">
@@ -390,7 +391,7 @@ graph TB
             </div>
             
             <div class="section">
-                <h2>🔒 IT & Güvenlik Ekipleri için Q&A</h2>
+                <h2>IT & Güvenlik Ekipleri için Q&A</h2>
                 
                 <div class="qa-section">
                     <h3>Güvenlik</h3>
@@ -497,7 +498,7 @@ graph TB
             </div>
             
             <div class="section">
-                <h2>⚙️ Teknik Stack Detayları</h2>
+                <h2>Teknik Stack Detayları</h2>
                 
                 <div class="tech-stack">
                     <div class="tech-item">
@@ -542,7 +543,7 @@ graph TB
             </div>
             
             <div class="section">
-                <h2>🔗 Entegrasyon Detayları</h2>
+                <h2>Entegrasyon Detayları</h2>
                 
                 <div class="components-grid">
                     <div class="component-card">
@@ -592,11 +593,37 @@ graph TB
     <script>
         mermaid.initialize({ 
             startOnLoad: true,
-            theme: 'default',
+            theme: 'dark',
+            themeVariables: {
+                primaryColor: '#88aaff',
+                primaryTextColor: '#e0e0e0',
+                primaryBorderColor: '#606060',
+                lineColor: '#606060',
+                secondaryColor: '#404040',
+                tertiaryColor: '#1f1f1f',
+                background: '#1f1f1f',
+                mainBkg: '#2d2d2d',
+                secondBkg: '#1f1f1f',
+                mainContrastColor: '#e0e0e0',
+                darkTextColor: '#e0e0e0',
+                border1: '#606060',
+                border2: '#404040',
+                arrowheadColor: '#606060',
+                fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif',
+                fontSize: '16px',
+                nodeBorder: '#606060',
+                clusterBkg: '#1f1f1f',
+                clusterBorder: '#606060',
+                defaultLinkColor: '#606060',
+                titleColor: '#88aaff',
+                edgeLabelBackground: '#2d2d2d',
+                nodeTextColor: '#e0e0e0'
+            },
             flowchart: {
                 useMaxWidth: true,
                 htmlLabels: true,
-                curve: 'basis'
+                curve: 'basis',
+                padding: 20
             }
         });
     </script>
